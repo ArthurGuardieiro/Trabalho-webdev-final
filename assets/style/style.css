@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-image: url(../img/bg.svg);
+    background-size: cover;
+    font-family: 'Rubik', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: auto;
+}
+
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+header{
+    text-align: center;
+    background-color: #1B98E0;
+    padding: 1rem;
+}
+
+nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #006494;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+header h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.titulo{
+    font-size: 3rem;
+    color:#006494;
+    margin: 1rem 0; 
+    text-align: center;
+    font-weight: bold;
+}
+
+header > img{
+    position: absolute;
+    left: 0;
+    width: 60px;
+    padding-left: 15px;
+    top: 28px;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #1B98E0;
+    color: white;
+    text-align: center;
+ }
+
+.ctn{
+    padding: 2rem;
+    margin-bottom: 1rem;
+    margin: 0 3rem;
+}
+
+.ctn > p, .ctn > h2 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+form{
+    padding: 20px;   
+    width: 60%;
+    margin: 10px auto;
+}
+
+input[type=radio]:nth-child(8):checked ~ .sexo-outro{
+    visibility: visible;
+}
+
+.sexo-outro{
+    visibility: hidden;
+}
+
+div{
+    padding: 0.5rem;
+}
+
+label, legend{
+    text-transform: capitalize;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.texto-nav{
+    transition: 0.5s;
+}
+
+#pag-atual{
+    color: rgba(0, 0, 0, 0.714);
+}
+
+.texto-nav:hover, #pag-atual:hover{
+    color: black;
+}
+
+.ctn > h2{
+    font-size: 1.7rem;
+}
+
+#div-img{
+    text-align: center;
+    padding: 1px;
+}
+
+#img-cachorro-de-rua{
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px 2px cadetblue;
+    transition: .6s;
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+
+#img-cachorro-de-rua:hover{
+    transform: scale(0.98);
+    box-shadow: 0 0 6px 6px #1B98E0;
+}
+
+.fora-ctn{
+    padding: 2rem;
+    padding-left: 5rem;
+    margin-bottom: 0rem;
+    margin: 0 3rem;
+}
+
+table{
+    margin: 2rem auto;
+    border: 1px solid #006494;
+    transition: .6s;
+    width: 50%;
+    cursor: pointer;
+}
+
+table th, td{
+    border: 1px solid #006494;
+    padding: .5rem;
+    text-align: center;
+}
+
+table:hover{
+    background-color:#1B98E0;
+    transform: scale(1.03);
+}
+
+.ctn-img > iframe{
+    margin: 2rem 0;
+    height: 300px;
+}
+
+input:focus{
+    background: rgba(255, 255, 255, 0);
+}
+
+span{
+    color: red;
+}
+
+.div-botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+legend{
+    color: #006494;
+    font-weight: bold;
+    margin-left: 0;
+}
+
+fieldset + span {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item > img{
+    height: 600px;
+    border-radius: 20px;
+    border: 2px solid #006494;
+    box-shadow: 0px 0px 2px 2px #1B98E0;
+}
+
+#modal{
+    display: none;
+}
+
+#jumbotron{
+    font-size: 1.3em;
+}
+
+.card-img-top{
+    height: 500px;
+}
+
+#badge{
+    text-align: center;
+}
+
+#breadcrumb{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+ol.breadcrumb > li > a{
+    color: #006494;
+}
+
+#evento-adocao{
+    background: #0065941d;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1386px){
+    form{
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .titulo{
+        font-size: 2rem;
+        margin: 1rem -.5rem;
+    }
+
+    .carousel-item > img{
+        height: 500px;
+    }
+
+    header > img{
+        top: 26px;   
+    }
+
+       
+}
+
+@media screen and (max-width: 768px){
+    
+    #img-cachorro-de-rua{
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px cadetblue;
+        transition: .6s;
+        width: 80%;
+        height: auto;
+    } 
+
+    .ctn-img > img{
+        border-radius: 1rem;
+        width: 30%;
+        height: auto;
+        display: flex;
+        margin: 5px auto;
+    }
+
+    .carousel-item > img{
+        height: 400px;
+    }
+
+    .ctn-img > iframe{
+        margin: 2rem 0;
+        height: 200px;
+    }
+
+    header > img{
+        top: 20px;   
+    }
+
+    
+
+    
+}
+
+@media screen and (max-width: 500px){
+    
+    #img-cachorro-de-rua{
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px cadetblue;
+        transition: .6s;
+        width: 80%;
+        height: 7rem;
+    }
+    
+    .titulo{
+        font-size: 1.5rem;
+        margin: 1rem -.5rem;
+    }
+
+    .ctn-img > img{
+        border-radius: 1rem;
+        width: 40%;
+        height: auto;
+        display: flex;
+        margin: 5px auto;
+    }
+
+    .ctn h2, .ctn p{
+        font-size: 1rem;
+    }
+
+    .ctn{
+        padding: 1rem;
+        margin-bottom: 1rem;
+        margin: 0 3rem;
+    }
+
+    .carousel-item > img{
+        height: 300px;
+    }
+
+    header > img{
+        top: 18px;   
+    }
+    
+}
