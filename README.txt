@@ -9,4 +9,4 @@ Para a parte de javaScript criei algumas funções, tanto para verificações qu
 
 Para a parte de jquery e bootstrap modifiquei algumas estilizações, pois ao importar o arquivo bootstrap minhas estilazações foram alteraradas, adicionei uma animação na primeira imagem da página home(index.html), que funciona tanto com o click na própria foto como no botão transparente, que possui um badge dentro que mostra quantos cliques foram feitos na foto, e os outros elementos de bootstrap estão incluidos nas outras páginas como também a utilização de bootstrap para melhorar a resposividade, utilizando containers, colunas e breakpoints.
 
- 
+https://arthurguardieiro.github.io/Trabalho-webdev-final/
