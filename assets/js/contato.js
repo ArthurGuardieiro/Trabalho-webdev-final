@@ -6,6 +6,7 @@ const checkbox = document.getElementsByName('motivo');
 const radio = document.getElementsByName('sexo');
 const botaoReset = document.querySelector('.resetar');
 const modalBody = document.querySelector('.modal-body');
+const botaoModal = document.getElementById('modal');
 
 botao.addEventListener('click', (e) => {
     e.preventDefault();
@@ -14,7 +15,7 @@ botao.addEventListener('click', (e) => {
     if(!verificaForm()) return false;
     
     mostrarDados();
-    $(document.querySelector('#modal')).trigger('click');
+    botaoModal.click();
 
     const limparForm = document.querySelector('.limpar-form');
     limparForm.addEventListener('click', () => {
